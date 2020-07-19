@@ -5,7 +5,7 @@ from django.contrib.auth.models import BaseUserManager
 # these are the std base classes when overrding or customizing the default user models
 
 
-class UserProfileManager():
+class UserProfileManager(BaseUserManager):
     """Manager for user profiles"""
 
     def create_user(self, email, name, password=None):
